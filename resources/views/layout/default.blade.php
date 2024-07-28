@@ -1,5 +1,5 @@
 @include('includes.head')
-<body>
+<body class="font-montserrat">
     @include('includes.header')
         <main class="page-main">
             @yield('content')

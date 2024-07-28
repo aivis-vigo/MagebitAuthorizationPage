@@ -28,25 +28,27 @@
 
 
     .btn-primary {
-        @apply bg-primary text-white shadow-md;
+        @apply bg-green-700 text-white shadow-md;
 
         &:hover {
-            @apply bg-primary-lighter text-white shadow-lg;
+            @apply bg-green-500 text-white shadow-lg;
         }
 
+        &:active {
+            @apply bg-green-900 text-white shadow-lg;
+        }
     }
 
     .btn-secondary {
         @apply bg-white border-2 border-primary-lighter text-black shadow-md;
 
-    &:hover {
-        @apply bg-white border-primary-darker shadow-lg;
-    }
+        &:hover {
+            @apply bg-white border-primary-darker shadow-lg;
+        }
 
-    &:focus {
-        @apply border-2 border-transparent;
-    }
-
+        &:focus {
+            @apply border-2 border-transparent;
+        }
     }
 
     .btn-size-lg {

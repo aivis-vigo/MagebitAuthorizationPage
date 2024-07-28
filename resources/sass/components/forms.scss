@@ -18,7 +18,11 @@ fieldset {
     }
 
     label {
-        @apply mb-2 block text-secondary-darker
+        @apply my-2 block text-secondary-darker
+    }
+
+    .checkbox {
+        @apply text-checkbox hover:border-checkbox-hover
     }
 
     .field.choice {

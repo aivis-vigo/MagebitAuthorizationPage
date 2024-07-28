@@ -1,131 +1,141 @@
-/** @type {import('tailwindcss').Config} */
-
-const {
-    spacing
-} = require('tailwindcss/defaultTheme');
-
-const colors = require('tailwindcss/colors');
-
+const {blue, emerald, amber, violet, orange, red, gray} = require("tailwindcss/colors");
+const { spacing } = require('tailwindcss/defaultTheme');
 module.exports = {
     purge: [
         './resources/**/*.blade.php',
         './resources/**/*.js',
         './resources/**/*.vue',
     ],
-    darkMode: false, // or 'media' or 'class'
+    darkMode: false,
     theme: {
         extend: {
             screens: {
                 'sm': '640px',
-                // => @media (min-width: 640px) { ... }
                 'md': '768px',
-                // => @media (min-width: 768px) { ... }
                 'lg': '1024px',
-                // => @media (min-width: 1024px) { ... }
                 'xl': '1280px',
-                // => @media (min-width: 1280px) { ... }
-                '2xl': '1536px' // => @media (min-width: 1536px) { ... }
-
+                '2xl': '1536px',
             },
             fontFamily: {
-                sans: ["Segoe UI", "Helvetica Neue", "Arial", "sans-serif"]
+                sans: ["Segoe UI", "Helvetica Neue", "Arial", "sans-serif"],
+                montserrat: ["Montserrat", "sans-serif"]
             },
             colors: {
                 primary: {
-                    lighter: colors.blue['300'],
-                    "DEFAULT": colors.blue['800'],
-                    darker: colors.blue['900']
+                    lighter: blue['300'],
+                    DEFAULT: blue['800'],
+                    darker: blue['900'],
                 },
                 secondary: {
-                    lighter: colors.blue['100'],
-                    "DEFAULT": colors.blue['200'],
-                    darker: colors.blue['300']
+                    lighter: blue['100'],
+                    DEFAULT: blue['200'],
+                    darker: blue['300'],
                 },
                 background: {
-                    lighter: colors.blue['100'],
-                    "DEFAULT": colors.blue['200'],
-                    darker: colors.blue['300']
+                    lighter: blue['100'],
+                    DEFAULT: blue['200'],
+                    darker: blue['300'],
                 },
-                green: colors.emerald,
-                yellow: colors.amber,
-                purple: colors.violet
+                green: {
+                    ...(emerald),
+                    base: 'rgba(2, 23, 14, 1)',
+                    hover:'rgba(15, 131, 82, 1)',
+                    active:'rgba(10, 87, 55, 1)'
+                },
+                yellow: amber,
+                purple: violet,
             },
             textColor: {
-                orange: colors.orange,
-                red: { ...colors.red,
-                    "DEFAULT": colors.red['500']
+                orange: orange,
+                red: {
+                    ...red,
+                    DEFAULT: red['500'],
                 },
                 primary: {
-                    lighter: colors.gray['700'],
-                    "DEFAULT": colors.gray['800'],
-                    darker: colors.gray['900']
+                    lighter: gray['700'],
+                    DEFAULT: gray['800'],
+                    darker: gray['900'],
                 },
                 secondary: {
-                    lighter: colors.gray['400'],
-                    "DEFAULT": colors.gray['600'],
-                    darker: colors.gray['800']
+                    lighter: gray['400'],
+                    DEFAULT: 'rgba(109, 109, 109, 1)',
+                    darker: gray['800'],
+                    hover: 'rgba(15, 131, 82, 1)',
+                    active: 'rgba(10, 87, 55, 1)',
+                },
+                checkbox: {
+                    DEFAULT: 'rgba(15, 131, 82, 1)'
                 }
             },
             backgroundColor: {
                 primary: {
-                    lighter: colors.blue['600'],
-                    "DEFAULT": colors.blue['700'],
-                    darker: colors.blue['800']
+                    lighter: blue['600'],
+                    DEFAULT: blue['700'],
+                    darker: blue['800'],
                 },
                 secondary: {
-                    lighter: colors.blue['100'],
-                    "DEFAULT": colors.blue['200'],
-                    darker: colors.blue['300']
+                    lighter: blue['100'],
+                    DEFAULT: blue['200'],
+                    darker: blue['300'],
                 },
                 container: {
                     lighter: '#ffffff',
-                    "DEFAULT": '#fafafa',
-                    darker: '#f5f5f5'
+                    DEFAULT: '#fafafa',
+                    darker: '#f5f5f5',
+                },
+                checkbox: {
+                    base: 'rgba(15, 131, 82, 1)',
                 }
             },
             borderColor: {
                 primary: {
-                    lighter: colors.blue['600'],
-                    "DEFAULT": colors.blue['700'],
-                    darker: colors.blue['800']
+                    lighter: blue['600'],
+                    DEFAULT: blue['700'],
+                    darker: blue['800'],
                 },
                 secondary: {
-                    lighter: colors.blue['100'],
-                    "DEFAULT": colors.blue['200'],
-                    darker: colors.blue['300']
+                    lighter: blue['100'],
+                    DEFAULT: blue['200'],
+                    darker: blue['300'],
                 },
                 container: {
                     lighter: '#f5f5f5',
-                    "DEFAULT": '#e7e7e7',
-                    darker: '#b6b6b6'
+                    DEFAULT: '#e7e7e7',
+                    darker: '#b6b6b6',
+                },
+                checkbox: {
+                    hover: 'rgb(15, 131, 82)'
                 }
             },
             minWidth: {
                 8: spacing["8"],
                 20: spacing["20"],
                 40: spacing["40"],
-                48: spacing["48"]
+                48: spacing["48"],
             },
             minHeight: {
                 14: spacing["14"],
                 'screen-25': '25vh',
                 'screen-50': '50vh',
-                'screen-75': '75vh'
+                'screen-75': '75vh',
             },
             maxHeight: {
                 '0': '0',
                 'screen-25': '25vh',
                 'screen-50': '50vh',
-                'screen-75': '75vh'
+                'screen-75': '75vh',
             },
             container: {
                 center: true,
-                padding: '1.5rem'
-            }
-        }
+                padding: '1.5rem',
+            },
+            dropShadow: {
+                custom: 'rgba(0, 0, 0, 0.25) 0px 1px 8px',
+            },
+        },
     },
     variants: {
         extend: {},
     },
     plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
-}
+};

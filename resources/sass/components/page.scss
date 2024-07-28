@@ -1,6 +1,14 @@
 
 body {
-    @apply bg-container;
+    @apply bg-container-darker;
+}
+
+.header {
+    @apply relative z-30 w-full border-b drop-shadow-custom bg-container-lighter border-container-lighter
+}
+
+header nav a {
+    @apply uppercase;
 }
 
 .page-main {
@@ -17,13 +25,24 @@ body {
 }
 
 .card {
-    @apply p-4 rounded-sm bg-container-lighter shadow;
+    @apply p-8 rounded-sm bg-container-lighter;
 }
 
 .actions-toolbar {
     @apply mt-6 border-t border-container-darker pt-4 flex justify-between flex-row-reverse items-center
 }
 
+footer a {
+    @apply text-green-base
+}
+
+footer a:hover {
+    @apply text-green-hover
+}
+
+footer a:active {
+    @apply text-green-active
+}
 
 #customer-login-container {
     @apply flex flex-col justify-between py-8;

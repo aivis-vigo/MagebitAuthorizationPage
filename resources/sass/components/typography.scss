@@ -17,4 +17,10 @@ a {
     @apply text-primary hover:text-primary-lighter active:text-primary-darker;
 }
 
+a:hover {
+    @apply text-green-700
+}
 
+a:active {
+    @apply text-green-900
+}
