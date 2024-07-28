@@ -157,7 +157,6 @@
         </div>
     </div>
 
-    <!-- JavaScript for Email and Password Validation -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const emailInput = document.getElementById('email');
@@ -202,18 +201,16 @@
             passwordInput.addEventListener('input', validatePasswordConfirmation);
             passwordConfirmInput.addEventListener('input', validatePasswordConfirmation);
 
-            // Function to show alerts
             function showAlert(alertId) {
                 const alertElement = document.getElementById(alertId);
                 if (alertElement) {
                     alertElement.style.display = 'block';
                     setTimeout(function () {
                         alertElement.style.display = 'none';
-                    }, 3000); // Adjust the duration as needed
+                    }, 3000);
                 }
             }
 
-            // Show alerts on page load
             @if(session('success'))
             showAlert('alert-success');
             @endif
