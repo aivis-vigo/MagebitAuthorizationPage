@@ -3,8 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Routing\Redirector;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
@@ -14,11 +19,11 @@ class AccountController extends Controller
     /**
      * Display my account page
      *
-     * @return Response
+     * @return Application|Factory|View
      */
-    public function index(): Response
+    public function index()
     {
-        return response()->view('page.account');
+        return view('page.account');
     }
 
     /**
@@ -39,7 +44,7 @@ class AccountController extends Controller
             return redirect()->intended('/success')->with('success', 'You have successfully logged in');
         }
 
-        return redirect()->back()->withErrors(['error' => 'Password or e-mail is incorrect!']);
+        return redirect()->back()->with('error' , 'Password or e-mail is incorrect!');
     }
 
 
@@ -69,7 +74,6 @@ class AccountController extends Controller
                 'confirmed',
                 'min:8',
                 'regex:/[a-z]/',
-                'regex:/[A-Z]/',
                 'regex:/[0-9]/',
             ],
             'subscribed' => 'nullable|boolean',
@@ -80,16 +84,12 @@ class AccountController extends Controller
             'lastname' => $request->lastName,
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            'subscribed' => $request->subscribed ?? 0,
+            'subscribed' => $request->subscribed ? 1 : 0,
         ]);
 
         return redirect('/')->with('success', 'User registered successfully!');
     }
 
-    /**
-     * todo: Display a success message for logged-in users
-     *
-     */
     public function success()
     {
         if (Auth::check()) {

@@ -1,72 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests" tests="29" assertions="86" errors="0" warnings="0" failures="12" skipped="0" time="14.045544">
-    <testsuite name="Tests\Browser\AppFunctionalityTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php" tests="13" assertions="19" errors="0" warnings="0" failures="6" skipped="0" time="6.094248">
-      <testcase name="testCanAccessIndex" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php" line="59" assertions="1" time="1.225670"/>
-      <testcase name="testLoginEmailValidation" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php" line="73" assertions="1" time="0.459461">
-        <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppFunctionalityTest::testLoginEmailValidation
-Did not see expected text [Please provide a valid e-mail address] within element [body].
-Failed asserting that false is true.
+  <testsuite name="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests" tests="29" assertions="136" errors="0" warnings="0" failures="3" skipped="0" time="13.876823">
+    <testsuite name="Tests\Browser\AppFunctionalityTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php" tests="13" assertions="21" errors="0" warnings="0" failures="2" skipped="0" time="4.189737">
+      <testcase name="testCanAccessIndex" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php" line="59" assertions="1" time="0.760900"/>
+      <testcase name="testLoginEmailValidation" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php" line="73" assertions="2" time="0.163802"/>
+      <testcase name="testRegisterEmailValidation" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php" line="90" assertions="2" time="0.129597"/>
+      <testcase name="testRegisterPasswordValidation" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php" line="107" assertions="2" time="0.130598"/>
+      <testcase name="testLoginErrorMessage" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php" line="124" assertions="2" time="0.435995"/>
+      <testcase name="testRegisterSuccessMessage" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php" line="142" assertions="1" time="0.353536"/>
+      <testcase name="testSuccessRouteGuard" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php" line="163" assertions="1" time="0.079472"/>
+      <testcase name="testDoesLoginFail" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php" line="177" assertions="1" time="0.464495">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppFunctionalityTest::testDoesLoginFail
+Actual path [/success] does not equal expected path [/].
+Failed asserting that '/success' matches PCRE pattern "/^\/$/u".
 
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/laravel/dusk/src/Concerns/MakesAssertions.php:181
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/laravel/dusk/src/Concerns/MakesAssertions.php:152
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php:78
+/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/laravel/dusk/src/Concerns/MakesUrlAssertions.php:185
+/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/laravel/dusk/src/Concerns/MakesUrlAssertions.php:218
+/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php:184
 /Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php:81
+/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php:186
 phpvfscomposer:///Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/phpunit/phpunit/phpunit:106</failure>
       </testcase>
-      <testcase name="testRegisterEmailValidation" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php" line="90" assertions="1" time="0.408088">
-        <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppFunctionalityTest::testRegisterEmailValidation
-Did not see expected text [Please provide a valid e-mail address] within element [body].
-Failed asserting that false is true.
-
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/laravel/dusk/src/Concerns/MakesAssertions.php:181
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/laravel/dusk/src/Concerns/MakesAssertions.php:152
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php:95
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php:98
-phpvfscomposer:///Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/phpunit/phpunit/phpunit:106</failure>
-      </testcase>
-      <testcase name="testRegisterPasswordValidation" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php" line="107" assertions="1" time="0.390316">
-        <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppFunctionalityTest::testRegisterPasswordValidation
-Did not see expected text [This field value must be the same as "Password"] within element [body].
-Failed asserting that false is true.
-
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/laravel/dusk/src/Concerns/MakesAssertions.php:181
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/laravel/dusk/src/Concerns/MakesAssertions.php:152
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php:112
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php:115
-phpvfscomposer:///Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/phpunit/phpunit/phpunit:106</failure>
-      </testcase>
-      <testcase name="testLoginErrorMessage" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php" line="124" assertions="2" time="0.764213">
-        <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppFunctionalityTest::testLoginErrorMessage
-Did not see expected text [Password or e-mail is incorrect!] within element [body].
-Failed asserting that false is true.
-
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/laravel/dusk/src/Concerns/MakesAssertions.php:181
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/laravel/dusk/src/Concerns/MakesAssertions.php:152
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php:132
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php:133
-phpvfscomposer:///Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/phpunit/phpunit/phpunit:106</failure>
-      </testcase>
-      <testcase name="testRegisterSuccessMessage" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php" line="142" assertions="1" time="0.610897">
-        <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppFunctionalityTest::testRegisterSuccessMessage
-Did not see expected text [User registered successfully!] within element [body].
-Failed asserting that false is true.
-
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/laravel/dusk/src/Concerns/MakesAssertions.php:181
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/laravel/dusk/src/Concerns/MakesAssertions.php:152
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php:153
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php:154
-phpvfscomposer:///Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/phpunit/phpunit/phpunit:106</failure>
-      </testcase>
-      <testcase name="testSuccessRouteGuard" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php" line="163" assertions="1" time="0.087551"/>
-      <testcase name="testDoesLoginFail" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php" line="177" assertions="2" time="0.519684"/>
-      <testcase name="testDoesRegisterFail" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php" line="195" assertions="2" time="0.271901"/>
-      <testcase name="testDoesRegisterSucceed" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php" line="216" assertions="2" time="0.574328">
+      <testcase name="testDoesRegisterFail" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php" line="195" assertions="2" time="0.265411"/>
+      <testcase name="testDoesRegisterSucceed" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php" line="216" assertions="2" time="0.588039">
         <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppFunctionalityTest::testDoesRegisterSucceed
 User is not created
 Failed asserting that null is not null.
@@ -76,106 +32,27 @@ Failed asserting that null is not null.
 /Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php:229
 phpvfscomposer:///Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/phpunit/phpunit/phpunit:106</failure>
       </testcase>
-      <testcase name="testDoesLoginSucceed" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php" line="238" assertions="2" time="0.292711"/>
-      <testcase name="testSuccessPageContent" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php" line="257" assertions="1" time="0.221160"/>
-      <testcase name="testLogout" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php" line="279" assertions="2" time="0.268269"/>
+      <testcase name="testDoesLoginSucceed" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php" line="238" assertions="2" time="0.338996"/>
+      <testcase name="testSuccessPageContent" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php" line="257" assertions="1" time="0.211977"/>
+      <testcase name="testLogout" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppFunctionalityTest.php" line="279" assertions="2" time="0.266919"/>
     </testsuite>
-    <testsuite name="Tests\Browser\AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" tests="16" assertions="67" errors="0" warnings="0" failures="6" skipped="0" time="7.951296">
-      <testcase name="testIsCorrectFontFamily" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="109" assertions="1" time="1.319968"/>
-      <testcase name="testIsButtonCorrectColor" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="126" assertions="1" time="0.380502">
-        <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppStylingTest::testIsButtonCorrectColor
-Button with text Sign In has incorrect background-color.
-Failed asserting that two strings are equal.
---- Expected
-+++ Actual
-@@ @@
--'rgba(15, 131, 82, 1)'
-+'rgba(4, 120, 87, 1)'
-
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php:59
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php:84
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php:136
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php:139
-phpvfscomposer:///Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/phpunit/phpunit/phpunit:106</failure>
-      </testcase>
-      <testcase name="testIsHeaderIconsCorrectColor" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="146" assertions="1" time="0.339720">
-        <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppStylingTest::testIsHeaderIconsCorrectColor
-Header icon has incorrect color.
-Failed asserting that two strings are equal.
---- Expected
-+++ Actual
-@@ @@
--'rgba(2, 23, 14, 1)'
-+'rgba(31, 41, 55, 1)'
-
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php:59
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php:84
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php:156
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php:159
-phpvfscomposer:///Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/phpunit/phpunit/phpunit:106</failure>
-      </testcase>
-      <testcase name="testIsHeaderLinksCorrectColor" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="166" assertions="1" time="0.342147">
-        <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppStylingTest::testIsHeaderLinksCorrectColor
-Header link with text "WHAT'S NEW" has incorrect color.
-Failed asserting that two strings are equal.
---- Expected
-+++ Actual
-@@ @@
--'rgba(2, 23, 14, 1)'
-+'rgba(55, 65, 81, 1)'
-
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php:59
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php:84
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php:176
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php:179
-phpvfscomposer:///Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/phpunit/phpunit/phpunit:106</failure>
-      </testcase>
-      <testcase name="testIsHeaderLinksWithoutUnderline" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="186" assertions="2" time="0.460948">
-        <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppStylingTest::testIsHeaderLinksWithoutUnderline
-Header link with text "WHAT'S NEW" has incorrect hover text-decoration-line.
-Failed asserting that two strings are equal.
---- Expected
-+++ Actual
-@@ @@
--'none'
-+'underline'
-
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php:59
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php:92
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php:196
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php:199
-phpvfscomposer:///Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/phpunit/phpunit/phpunit:106</failure>
-      </testcase>
-      <testcase name="testIsHeaderLinksCorrectWeight" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="206" assertions="1" time="0.338393">
-        <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppStylingTest::testIsHeaderLinksCorrectWeight
-Header link with text "WHAT'S NEW"
-Failed asserting that two strings are equal.
---- Expected
-+++ Actual
-@@ @@
--'500'
-+'400'
-
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php:59
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php:215
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
-/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php:218
-phpvfscomposer:///Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/vendor/phpunit/phpunit/phpunit:106</failure>
-      </testcase>
-      <testcase name="testIsHeaderLinksUppercase" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="225" assertions="6" time="0.072945"/>
-      <testcase name="testDoesHeaderBarHaveShadow" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="242" assertions="1" time="0.049382"/>
-      <testcase name="testForgotPasswordColor" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="260" assertions="3" time="0.298910"/>
-      <testcase name="testForgotPasswordUnderline" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="279" assertions="1" time="0.060757"/>
-      <testcase name="testFooterLinksColor" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="297" assertions="21" time="1.797395"/>
-      <testcase name="testFooterLinksUnderline" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="317" assertions="21" time="1.789232"/>
-      <testcase name="testCheckboxStyling" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="337" assertions="3" time="0.219339"/>
-      <testcase name="testRegisterSectionTitle" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="371" assertions="1" time="0.062795"/>
-      <testcase name="testRegisterFormTitles" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="389" assertions="2" time="0.069132"/>
-      <testcase name="testFooterCopyright" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="414" assertions="1" time="0.349731">
+    <testsuite name="Tests\Browser\AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" tests="16" assertions="115" errors="0" warnings="0" failures="1" skipped="0" time="9.687086">
+      <testcase name="testIsCorrectFontFamily" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="109" assertions="1" time="0.602292"/>
+      <testcase name="testIsButtonCorrectColor" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="126" assertions="6" time="0.601620"/>
+      <testcase name="testIsHeaderIconsCorrectColor" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="146" assertions="6" time="0.539423"/>
+      <testcase name="testIsHeaderLinksCorrectColor" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="166" assertions="18" time="1.569773"/>
+      <testcase name="testIsHeaderLinksWithoutUnderline" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="186" assertions="18" time="1.497978"/>
+      <testcase name="testIsHeaderLinksCorrectWeight" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="206" assertions="6" time="0.089946"/>
+      <testcase name="testIsHeaderLinksUppercase" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="225" assertions="6" time="0.081420"/>
+      <testcase name="testDoesHeaderBarHaveShadow" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="242" assertions="1" time="0.054988"/>
+      <testcase name="testForgotPasswordColor" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="260" assertions="3" time="0.297216"/>
+      <testcase name="testForgotPasswordUnderline" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="279" assertions="1" time="0.059887"/>
+      <testcase name="testFooterLinksColor" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="297" assertions="21" time="1.783130"/>
+      <testcase name="testFooterLinksUnderline" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="317" assertions="21" time="1.776318"/>
+      <testcase name="testCheckboxStyling" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="337" assertions="3" time="0.205306"/>
+      <testcase name="testRegisterSectionTitle" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="371" assertions="1" time="0.068285"/>
+      <testcase name="testRegisterFormTitles" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="389" assertions="2" time="0.072794"/>
+      <testcase name="testFooterCopyright" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/Users/aivisvigo/PhpstormProjects/aef64415-fdda-4bc1-8525-7fe36cca1dc6/tests/Browser/AppStylingTest.php" line="414" assertions="1" time="0.386710">
         <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppStylingTest::testFooterCopyright
 Couldn't find text "© 2023 Pineapple Ltd."
 Failed asserting that false is true.

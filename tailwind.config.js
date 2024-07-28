@@ -38,9 +38,9 @@ module.exports = {
                 },
                 green: {
                     ...(emerald),
-                    base: 'rgba(2, 23, 14, 1)',
-                    hover:'rgba(15, 131, 82, 1)',
-                    active:'rgba(10, 87, 55, 1)'
+                    base: 'rgba(15, 131, 82, 1)',
+                    hover:'rgba(20, 174, 109, 1)',
+                    active:'rgba(10, 87, 55, 1)',
                 },
                 yellow: amber,
                 purple: violet,
@@ -63,9 +63,19 @@ module.exports = {
                     hover: 'rgba(15, 131, 82, 1)',
                     active: 'rgba(10, 87, 55, 1)',
                 },
+                link: {
+                    DEFAULT: 'rgba(2, 23, 14, 1)',
+                    hover: 'rgba(15, 131, 82, 1)',
+                    active: 'rgba(10, 87, 55, 1)',
+                },
+                navigation: {
+                    icon: 'rgba(2, 23, 14, 1)',
+                    icon_hover: 'rgba(15, 131, 82, 1)',
+                    icon_active: 'rgba(10, 87, 55, 1)',
+                },
                 checkbox: {
-                    DEFAULT: 'rgba(15, 131, 82, 1)'
-                }
+                    DEFAULT: 'rgba(15, 131, 82, 1)',
+                },
             },
             backgroundColor: {
                 primary: {

@@ -8,7 +8,7 @@ body {
 }
 
 header nav a {
-    @apply uppercase;
+    @apply uppercase font-medium text-navigation-icon hover:text-link-hover active:text-link-active;
 }
 
 .page-main {
@@ -29,19 +29,19 @@ header nav a {
 }
 
 .actions-toolbar {
-    @apply mt-6 border-t border-container-darker pt-4 flex justify-between flex-row-reverse items-center
+    @apply mt-6 border-t border-container pt-4 flex justify-between flex-row-reverse items-center
 }
 
 footer a {
-    @apply text-green-base
+    @apply text-link text-sm
 }
 
 footer a:hover {
-    @apply text-green-hover
+    @apply text-link-hover
 }
 
 footer a:active {
-    @apply text-green-active
+    @apply text-link-active
 }
 
 #customer-login-container {

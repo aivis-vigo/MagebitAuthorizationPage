@@ -1,6 +1,5 @@
 <body>
 <header>
-    {{--todo: maybe smaller link size--}}
     <div data-test="header-bar" id="header" class="header">
         <div class="container flex flex-wrap items-center justify-between w-full py-1 mx-auto mt-0">
             <!--Logo-->
@@ -11,7 +10,6 @@
                         <svg width="24" height="41" viewBox="0 0 24 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5.23419 14L1.24638 9.21463L5.9178 9.9932L6.59158 10.1055L6.49497 9.42929L5.70711 3.91421L9.64645 7.85355L10.2473 8.45442L10.4808 7.63736L12 2.32003L13.5192 7.63736L13.7527 8.45442L14.3536 7.85355L18.2929 3.91421L17.505 9.42929L17.4084 10.1055L18.0822 9.9932L22.7536 9.21463L18.7658 14H5.23419ZM23.5 35.2929L18.7929 40H5.20711L0.5 35.2929V21.7071L5.20711 17H18.7929L23.5 21.7071V35.2929Z" stroke="#0F8352"/>
                         </svg>
-                        {{--todo: lower text to vertical line of right side of pineapple --}}
                         <!-- Text -->
                         <span class="ml-2 mt-5"><svg width="78" height="17" viewBox="0 0 78 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 16.5V3.95115H1.39834V5.13001C1.72803 4.66871 2.10035 4.32417 2.5153 4.09637C2.93026 3.86288 3.43332 3.74613 4.02449 3.74613C4.79755 3.74613 5.47967 3.94545 6.07084 4.3441C6.662 4.74275 7.10822 5.30655 7.40949 6.0355C7.71076 6.75877 7.86139 7.55321 7.86139 8.41885C7.86139 9.34713 7.6937 10.1843 7.35833 10.9303C7.02864 11.6707 6.54547 12.2402 5.90883 12.6388C5.27787 13.0318 4.61281 13.2282 3.91364 13.2282C3.40206 13.2282 2.94163 13.12 2.53236 12.9036C2.12877 12.6872 1.79624 12.4139 1.53476 12.0836V16.5H0ZM1.38981 8.53844C1.38981 9.70591 1.62571 10.5687 2.09751 11.1268C2.5693 11.6849 3.14058 11.964 3.81132 11.964C4.49344 11.964 5.07608 11.6764 5.55925 11.1012C6.0481 10.5203 6.29252 9.62333 6.29252 8.4103C6.29252 7.25423 6.05378 6.38859 5.5763 5.8134C5.1045 5.23821 4.53892 4.95061 3.87954 4.95061C3.22584 4.95061 2.64604 5.25814 2.14014 5.8732C1.63992 6.48256 1.38981 7.37097 1.38981 8.53844Z" fill="#02170E"/>
@@ -56,37 +54,37 @@
                     <nav class="w-full duration-150 ease-in-out transform flex justify-start w-auto relative min-h-0 transition-display">
                         <div class="relative mr-2 level-0">
                             <span class="flex items-center block p-3 text-md bg-opacity-95">
-                                <a data-test="header-link" class="w-full py-3 text-base text-gray-700 hover:underline level-0"
+                                <a data-test="header-link" class="w-full py-3 level-0"
                                    href="#" title="What's New">What's New</a>
                             </span>
                         </div>
                         <div class="relative mr-2 level-0">
                             <span class="flex items-center block p-3 text-md bg-opacity-95">
-                                <a data-test="header-link" class="w-full py-3 text-base text-gray-700 hover:underline level-0"
+                                <a data-test="header-link" class="w-full py-3 level-0"
                                    href="#" title="Women">Women</a>
                             </span>
                         </div>
                         <div class="relative mr-2 level-0">
                             <span class="flex items-center block p-3 text-md bg-opacity-95">
-                                <a data-test="header-link" class="w-full py-3 text-base text-gray-700 hover:underline level-0"
+                                <a data-test="header-link" class="w-full py-3 level-0"
                                    href="#" title="Men">Men</a>
                             </span>
                         </div>
                         <div class="relative mr-2 level-0">
                             <span class="flex items-center block p-3 text-md bg-opacity-95">
-                                <a data-test="header-link" class="w-full py-3 text-base text-gray-700 hover:underline level-0"
+                                <a data-test="header-link" class="w-full py-3 level-0"
                                    href="#" title="Gear">Gear</a>
                             </span>
                         </div>
                         <div class="relative mr-2 level-0">
                             <span class="flex items-center block p-3 text-md bg-opacity-95">
-                                <a data-test="header-link" class="w-full py-3 text-base text-gray-700 hover:underline level-0"
+                                <a data-test="header-link" class="w-full py-3 level-0"
                                    href="#" title="Training">Training</a>
                             </span>
                         </div>
                         <div class="relative mr-2 level-0">
                             <span class="flex items-center block p-3 text-md bg-opacity-95">
-                                <a data-test="header-link" class="w-full py-3 text-base text-gray-700 hover:underline level-0"
+                                <a data-test="header-link" class="w-full py-3 level-0"
                                    href="#" title="Sale">Sale</a>
                             </span>
                         </div>
@@ -94,13 +92,11 @@
                 </div>
             </div>
 
-            {{--todo: hover was done manually --}}
-
             <div class="flex items-center order-3">
                 <!--My Account Icon-->
                 <div class="relative inline-block ml-1 sm:ml-3">
                     <a data-test="header-icon" href="#" id="customer-menu"
-                       class="block hover:text-green-700 active:text-green-900" aria-label="My Account" aria-expanded="false">
+                       class="block text-navigation-icon hover:text-navigation-icon_hover active:text-navigation-icon_active" aria-label="My Account" aria-expanded="false">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                              stroke="currentColor" class="md:h-6 md:w-6" width="32" height="32" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -113,7 +109,7 @@
                 <a
                     data-test="header-icon"
                     id="menu-cart-icon"
-                    class="relative inline-block ml-1 no-underline sm:ml-3 hover:text-black"
+                    class="relative text-navigation-icon hover:text-navigation-icon_hover active:text-navigation-icon_active inline-block ml-1 no-underline sm:ml-3"
                     href="#"
                 >
                     <span class="sr-only label">Cart</span>

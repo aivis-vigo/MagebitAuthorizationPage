@@ -28,14 +28,14 @@
 
 
     .btn-primary {
-        @apply bg-green-700 text-white shadow-md;
+        @apply bg-green-base text-white shadow-md;
 
         &:hover {
-            @apply bg-green-500 text-white shadow-lg;
+            @apply bg-green-hover text-white shadow-lg;
         }
 
         &:active {
-            @apply bg-green-900 text-white shadow-lg;
+            @apply bg-green-active text-white shadow-lg;
         }
     }
 

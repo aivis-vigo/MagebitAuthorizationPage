@@ -60,7 +60,7 @@ fieldset ~ fieldset {
 .form-select,
 .form-multiselect,
 .form-textarea {
-    @apply border border-gray-300 rounded-md shadow-sm;
+    @apply border border-container rounded-md shadow-sm;
 
     &:focus {
         @apply border-primary-lighter ring ring-primary ring-opacity-50;
